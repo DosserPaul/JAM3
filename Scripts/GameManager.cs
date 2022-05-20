@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,9 +9,15 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     int nbCards = 4;
     [SerializeField]
+    int nbFamily = 6;
+    [SerializeField]
     float timeToReturn = 5.0f;
     public List<Card> objects = new List<Card>();
     public List<FamilyId> familyGot = new List<FamilyId>();
+
+    [Header("UI")]
+    [SerializeField]
+    Text txtFamily;
 
     private bool isReturning = false;
 
@@ -27,6 +34,8 @@ public class GameManager : MonoBehaviour
         {
             StartCoroutine(returnCards());
         }
+
+        txtFamily.text = familyGot.Count + " / " + nbFamily;
     }
 
     IEnumerator returnCards()

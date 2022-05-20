@@ -2595,9 +2595,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nbCards: 4
+  nbFamily: 6
   timeToReturn: 5
   objects: []
   familyGot: []
+  txtFamily: {fileID: 152362456}
 --- !u!1 &1269700707
 GameObject:
   m_ObjectHideFlags: 0
