@@ -24,6 +24,13 @@ public class GameManager : MonoBehaviour
     [Header("UI")]
     [SerializeField]
     Text txtFamily;
+    [SerializeField]
+    GameObject endPanel;
+    [Header("Timer")]
+    [SerializeField]
+    Clock timer;
+    [SerializeField]
+    UnityEngine.UI.Text txtEndTimer;
 
     [Header("Scene")]
     [SerializeField]
@@ -34,6 +41,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frames update
     void Start()
     {
+        endPanel.SetActive(false);
         CheckValide();
         InitCards();
     }
@@ -41,6 +49,13 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (familyGot.Count >= nbFamily)
+        {
+            endPanel.SetActive(true);
+            txtEndTimer.text = "01:01:01";
+            /*timer.Stop();*/
+            return;
+        }
         if (objects.Count >= nbCards && !isReturning)
         {
             StartCoroutine(ReturnCards());
@@ -138,6 +153,11 @@ public class GameManager : MonoBehaviour
     public void LoadMainMenu()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(mainMenu);
+    }
+
+    public void LoadCurrScene()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
     }
 
     public bool AddCard(Card crd)
