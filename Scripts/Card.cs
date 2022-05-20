@@ -8,27 +8,45 @@ public class Card : MonoBehaviour
     [SerializeField]
     CardId identification;
     [Header("Settings in Game")]
+    [SerializeField]
+    GameManager manager;
     public float overY = 10f;
     public float smoothSpeed = 5f;
     public float smoothRot = 25f;
+    public float destroyY = 100.0f;
 
     [Header("User Interface")]
     public GameObject PlaneImage;
 
+    private Transform startTransform;
     private Vector3 startOver;
     private Quaternion startRot;
 
     private bool overd = false;
     private bool clicked = false;
+    private bool toDestroy = false;
 
     private void Awake()
     {
         startOver = transform.position;
         startRot = transform.rotation;
+        startTransform = transform;
     }
 
     private void Update()
     {
+        if (toDestroy)
+        {
+            if (transform.position.y >= startOver.y + destroyY)
+            {
+                Destroy(gameObject);
+                return;
+            }
+            Vector3 nPos = startOver;
+            nPos.y = startOver.y + destroyY;
+            transform.position = Vector3.Lerp(transform.position, nPos, Time.deltaTime * smoothSpeed);
+            return;
+        }
         if (overd) {
             Vector3 nPos = startOver;
             nPos.y = startOver.y + overY;
@@ -39,8 +57,12 @@ public class Card : MonoBehaviour
         }
 
         if (clicked) {
+            Vector3 targetedRot = startTransform.eulerAngles;
+            targetedRot.z = startRot.z + 180.0f;
+            transform.eulerAngles = Vector3.Lerp(transform.eulerAngles, targetedRot, smoothRot * Time.deltaTime);
+        } else
+        {
             Quaternion targetedRot = startRot;
-            targetedRot.z = targetedRot.z + 180.0f;
             transform.rotation = Quaternion.Slerp(transform.rotation, targetedRot, Time.deltaTime * smoothRot);
         }
     }
@@ -57,11 +79,30 @@ public class Card : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if (clicked)
+            return;
         SetClicked(true);
     }
 
     public void SetClicked(bool b)
     {
         clicked = b;
+        if (b == true)
+        {
+            if (!manager.AddCard(this))
+            {
+                clicked = false;
+            }
+        }
+    }
+
+    public void DestroyCard()
+    {
+        toDestroy = true;
+    }
+
+    public CardId GetCardId()
+    {
+        return identification;
     }
 }
