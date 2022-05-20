@@ -24,8 +24,14 @@ public class Clock : MonoBehaviour {
         }
     }
 
-    void Stop() {
+    public void Stop() {
         isStoped = true;
+    }
+
+    public string GetStringTime()
+    {
+        string res = format_time(minutes) + ":" + format_time(seconds) + ":" + format_time(miliSeconds);
+        return res;
     }
 
     string format_time(int nb) {
@@ -52,7 +58,7 @@ public class Clock : MonoBehaviour {
             minutes += 1;
             seconds = 0;
         }
-        textDisplay.text = "" + format_time(minutes) + ":" + format_time(seconds) + ":" + format_time(miliSeconds);
+        textDisplay.text = GetStringTime();
         takingAway = false;
     }
 }

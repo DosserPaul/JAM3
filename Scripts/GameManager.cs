@@ -52,8 +52,8 @@ public class GameManager : MonoBehaviour
         if (familyGot.Count >= nbFamily)
         {
             endPanel.SetActive(true);
-            txtEndTimer.text = "01:01:01";
-            /*timer.Stop();*/
+            timer.Stop();
+            txtEndTimer.text = timer.GetStringTime();
             return;
         }
         if (objects.Count >= nbCards && !isReturning)

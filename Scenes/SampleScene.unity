@@ -4714,6 +4714,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1208617776}
   - component: {fileID: 1208617777}
+  - component: {fileID: 1208617778}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -4796,9 +4797,26 @@ MonoBehaviour:
     valide: 0
   txtFamily: {fileID: 152362456}
   endPanel: {fileID: 229050206}
-  timer: {fileID: 0}
+  timer: {fileID: 1208617778}
   txtEndTimer: {fileID: 1406235577}
   mainMenu: mainMenu
+--- !u!114 &1208617778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208617775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b8ddffbf126b75718b9c6fce6e9361a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 1748788149}
+  seconds: 0
+  minutes: 0
+  miliSeconds: 0
+  takingAway: 0
 --- !u!1 &1269700707
 GameObject:
   m_ObjectHideFlags: 0
