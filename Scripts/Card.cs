@@ -5,6 +5,7 @@ using UnityEngine;
 public class Card : MonoBehaviour
 {
     [Header("Reference")]
+    [SerializeField]
     CardId identification;
     [Header("Settings in Game")]
     public float overY = 10f;
