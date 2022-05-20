@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Init Random")]
     [SerializeField]
-    Card[] allCards;
+    List<Card> allCards;
     [SerializeField]
     List<FamilySelect> allFamilies = new List<FamilySelect>();
 
@@ -96,24 +96,23 @@ public class GameManager : MonoBehaviour
 
     private void InitCards()
     {
-        if (allCards.Length == 0)
+        if (allCards.Count == 0)
             return;
-        for (int i = 0; i < 6; i++)
+        for (int i = 0; i <nbFamily; i++)
         {
             int rd = Random.Range(0, allFamilies.Count - 1);
 
-            while (allFamilies[rd].used || !allFamilies[rd].valide) {
-                rd = Random.Range(0, allFamilies.Count - 1);
-            }
             allFamilies[rd].used = true;
             for (int x = 0; x < nbCards; x++)
             {
-                int rdCard = Random.Range(0, allCards.Length - 1);
-                while (!allCards[rdCard].SetCard(allFamilies[rd].id.members[x]))
+                int rdCard = Random.Range(0, allCards.Count - 1);
+                if (!allCards[rdCard].SetCard(allFamilies[rd].id.members[x]))
                 {
-                    rdCard = Random.Range(0, allCards.Length - 1);
+                    Debug.LogWarning("Failled to set family for " + allCards[rdCard].gameObject.name);
                 }
+                allCards.RemoveAt(rdCard);
             }
+            allFamilies.RemoveAt(rd);
         }
     }
 
