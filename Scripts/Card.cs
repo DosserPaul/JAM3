@@ -33,14 +33,6 @@ public class Card : MonoBehaviour
         startOver = transform.position;
         startRot = transform.rotation;
         startTransform = transform;
-        if (identification != null)
-        {
-            planeCharacter.GetComponent<MeshRenderer>().material = identification.Image;
-        } else
-        {
-            Material mat = new Material(Shader.Find("Specular"));
-            planeCharacter.GetComponent<MeshRenderer>().material = mat;
-        }
     }
 
     private void Update()
@@ -114,5 +106,16 @@ public class Card : MonoBehaviour
     public CardId GetCardId()
     {
         return identification;
+    }
+
+    public bool SetCard(CardId id)
+    {
+        if (identification != null)
+        {
+            return false;
+        }
+        identification = id;
+        planeCharacter.GetComponent<MeshRenderer>().material = identification.Image;
+        return true;
     }
 }

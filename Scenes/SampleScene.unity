@@ -4163,9 +4163,10 @@ MonoBehaviour:
   nbCards: 4
   nbFamily: 6
   timeToReturn: 5
-  objects: []
-  familyGot: []
+  allCards: []
+  allFamilies: []
   txtFamily: {fileID: 152362456}
+  mainMenu: mainMenu
 --- !u!1 &1269700707
 GameObject:
   m_ObjectHideFlags: 0

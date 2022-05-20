@@ -6,4 +6,5 @@ using UnityEngine;
 public class FamilyId : ScriptableObject
 {
     public string familyName;
+    public CardId[] members;
 }

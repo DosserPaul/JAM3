@@ -12,19 +12,30 @@ public class GameManager : MonoBehaviour
     int nbFamily = 6;
     [SerializeField]
     float timeToReturn = 5.0f;
-    public List<Card> objects = new List<Card>();
-    public List<FamilyId> familyGot = new List<FamilyId>();
+    List<Card> objects = new List<Card>();
+    List<FamilyId> familyGot = new List<FamilyId>();
+
+    [Header("Init Random")]
+    [SerializeField]
+    Card[] allCards;
+    [SerializeField]
+    List<FamilySelect> allFamilies = new List<FamilySelect>();
 
     [Header("UI")]
     [SerializeField]
     Text txtFamily;
+
+    [Header("Scene")]
+    [SerializeField]
+    string mainMenu;
 
     private bool isReturning = false;
 
     // Start is called before the first frames update
     void Start()
     {
-        
+        CheckValide();
+        InitCards();
     }
 
     // Update is called once per frame
@@ -32,13 +43,13 @@ public class GameManager : MonoBehaviour
     {
         if (objects.Count >= nbCards && !isReturning)
         {
-            StartCoroutine(returnCards());
+            StartCoroutine(ReturnCards());
         }
 
         txtFamily.text = familyGot.Count + " / " + nbFamily;
     }
 
-    IEnumerator returnCards()
+    IEnumerator ReturnCards()
     {
         isReturning = true;
         bool sameFamily = true;
@@ -83,6 +94,53 @@ public class GameManager : MonoBehaviour
         isReturning = false;
     }
 
+    private void InitCards()
+    {
+        if (allCards.Length == 0)
+            return;
+        for (int i = 0; i < 6; i++)
+        {
+            int rd = Random.Range(0, allFamilies.Count - 1);
+
+            while (allFamilies[rd].used || !allFamilies[rd].valide) {
+                rd = Random.Range(0, allFamilies.Count - 1);
+            }
+            allFamilies[rd].used = true;
+            for (int x = 0; x < nbCards; x++)
+            {
+                int rdCard = Random.Range(0, allCards.Length - 1);
+                while (!allCards[rdCard].SetCard(allFamilies[rd].id.members[x]))
+                {
+                    rdCard = Random.Range(0, allCards.Length - 1);
+                }
+            }
+        }
+    }
+
+    private void CheckValide()
+    {
+        int nbValideFamilies = 0;
+        for (int i = 0; i < allFamilies.Count; i++) {
+            if (allFamilies[i].id.members.Length >= nbCards) {
+                allFamilies[i].valide = true;
+                nbValideFamilies++;
+            } else
+            {
+                Debug.LogWarning("Family " + allFamilies[i].id.familyName + " invalide");
+            }
+        }
+        if (nbValideFamilies < nbFamily)
+        {
+            Debug.LogWarning("Too many invalide families to run game");
+            LoadMainMenu();
+        }
+    }
+
+    public void LoadMainMenu()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(mainMenu);
+    }
+
     public bool AddCard(Card crd)
     {
         if (objects.Count >= nbCards)
@@ -93,4 +151,12 @@ public class GameManager : MonoBehaviour
         objects.Add(crd);
         return true;
     }
+}
+
+[System.Serializable]
+public class FamilySelect
+{
+    public FamilyId id;
+    public bool used = false;
+    public bool valide = false;
 }
