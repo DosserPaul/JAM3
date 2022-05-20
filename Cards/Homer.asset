@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f3acba0db88c22439eda49e14bf953a, type: 3}
   m_Name: Homer
   m_EditorClassIdentifier: 
-  Image: {fileID: 0}
+  Image: {fileID: 2100000, guid: dc7ca8bc4ac90eb40880a9e4990fa893, type: 2}
   family: {fileID: 11400000, guid: 6d9f591033f55e246ae8e2adb08159a4, type: 2}
   Name: Homer
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 1, g: 0, b: 0, a: 1}

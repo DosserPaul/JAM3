@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 14213294}
   - component: {fileID: 14213293}
   - component: {fileID: 14213292}
-  - component: {fileID: 14213295}
   m_Layer: 0
   m_Name: Plane (23)
   m_TagString: Untagged
@@ -143,25 +142,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &14213291
-RectTransform:
+--- !u!4 &14213291
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 14213290}
-  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: -0.55, z: 0}
   m_LocalScale: {x: 0.09903201, y: 1, z: 0.099158496}
   m_Children: []
   m_Father: {fileID: 1557722081}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.55}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 180}
 --- !u!64 &14213292
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -195,7 +189,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: dc7ca8bc4ac90eb40880a9e4990fa893, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -225,14 +219,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 14213290}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!222 &14213295
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 14213290}
-  m_CullTransparentMesh: 1
 --- !u!1 &17169367
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,6 +330,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
+  planeCharacter: {fileID: 191567719}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
@@ -460,6 +447,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
+  planeCharacter: {fileID: 452105159}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
@@ -491,13 +479,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 99896035}
-  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0.55, z: 0}
   m_LocalScale: {x: 0.09903201, y: 1, z: 0.099158496}
   m_Children: []
   m_Father: {fileID: 297922181}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 180}
 --- !u!64 &99896037
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -672,6 +660,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
+  planeCharacter: {fileID: 1461907463}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
@@ -782,13 +771,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 180568744}
-  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0.55, z: 0}
   m_LocalScale: {x: 0.09903201, y: 1, z: 0.099158496}
   m_Children: []
   m_Father: {fileID: 974371866}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 180}
 --- !u!64 &180568746
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -878,13 +867,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 191567719}
-  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0.55, z: 0}
   m_LocalScale: {x: 0.09903201, y: 1, z: 0.099158496}
   m_Children: []
   m_Father: {fileID: 17169368}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 180}
 --- !u!64 &191567721
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1049,13 +1038,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 233586808}
-  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0.55, z: 0}
   m_LocalScale: {x: 0.09903201, y: 1, z: 0.099158496}
   m_Children: []
   m_Father: {fileID: 1269700708}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 180}
 --- !u!64 &233586810
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1145,13 +1134,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 243603936}
-  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0.55, z: 0}
   m_LocalScale: {x: 0.09903201, y: 1, z: 0.099158496}
   m_Children: []
   m_Father: {fileID: 868350610}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 180}
 --- !u!64 &243603938
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1326,6 +1315,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
+  planeCharacter: {fileID: 1274866626}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
@@ -1357,13 +1347,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 257959990}
-  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0.55, z: 0}
   m_LocalScale: {x: 0.09903201, y: 1, z: 0.099158496}
   m_Children: []
   m_Father: {fileID: 564954291}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 180}
 --- !u!64 &257959992
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1538,6 +1528,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
+  planeCharacter: {fileID: 99896035}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
@@ -1746,13 +1737,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 389022793}
-  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0.55, z: 0}
   m_LocalScale: {x: 0.09903201, y: 1, z: 0.099158496}
   m_Children: []
   m_Father: {fileID: 1071907333}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 180}
 --- !u!64 &389022795
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1842,13 +1833,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 452105159}
-  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0.55, z: 0}
   m_LocalScale: {x: 0.09903199, y: 1, z: 0.0991585}
   m_Children: []
   m_Father: {fileID: 45384950}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 180}
 --- !u!64 &452105161
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1992,13 +1983,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 526848975}
-  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0.55, z: 0}
   m_LocalScale: {x: 0.09903201, y: 1, z: 0.099158496}
   m_Children: []
   m_Father: {fileID: 2142827362}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 180}
 --- !u!64 &526848977
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2173,6 +2164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
+  planeCharacter: {fileID: 722900633}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
@@ -2289,6 +2281,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
+  planeCharacter: {fileID: 257959990}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
@@ -2405,6 +2398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
+  planeCharacter: {fileID: 880987132}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
@@ -2521,6 +2515,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
+  planeCharacter: {fileID: 766234127}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
@@ -2552,13 +2547,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 665440097}
-  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0.55, z: 0}
   m_LocalScale: {x: 0.09903201, y: 1, z: 0.099158496}
   m_Children: []
   m_Father: {fileID: 1031497457}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 180}
 --- !u!64 &665440099
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2648,13 +2643,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 671954370}
-  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0.55, z: 0}
   m_LocalScale: {x: 0.09903201, y: 1, z: 0.099158496}
   m_Children: []
   m_Father: {fileID: 810771392}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 180}
 --- !u!64 &671954372
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2837,13 +2832,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 722900633}
-  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0.55, z: 0}
   m_LocalScale: {x: 0.09903201, y: 1, z: 0.099158496}
   m_Children: []
   m_Father: {fileID: 550847732}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 180}
 --- !u!64 &722900635
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3009,13 +3004,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 766234127}
-  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0.55, z: 0}
   m_LocalScale: {x: 0.09903201, y: 1, z: 0.099158496}
   m_Children: []
   m_Father: {fileID: 606293424}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 180}
 --- !u!64 &766234129
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3190,6 +3185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
+  planeCharacter: {fileID: 671954370}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
@@ -3306,6 +3302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
+  planeCharacter: {fileID: 243603936}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
@@ -3337,13 +3334,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 880987132}
-  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0.55, z: 0}
   m_LocalScale: {x: 0.09903201, y: 1, z: 0.099158496}
   m_Children: []
   m_Father: {fileID: 582884401}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 180}
 --- !u!64 &880987134
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3433,13 +3430,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 952168698}
-  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0.55, z: 0}
   m_LocalScale: {x: 0.09903201, y: 1, z: 0.099158496}
   m_Children: []
   m_Father: {fileID: 1352577134}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 180}
 --- !u!64 &952168700
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3697,6 +3694,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
+  planeCharacter: {fileID: 180568744}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
@@ -3813,6 +3811,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
+  planeCharacter: {fileID: 665440097}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
@@ -3995,6 +3994,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
+  planeCharacter: {fileID: 389022793}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
@@ -4111,6 +4111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
+  planeCharacter: {fileID: 1462177323}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
@@ -4276,6 +4277,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
+  planeCharacter: {fileID: 233586808}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
@@ -4307,13 +4309,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1274866626}
-  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0.55, z: 0}
   m_LocalScale: {x: 0.09903201, y: 1, z: 0.099158496}
   m_Children: []
   m_Father: {fileID: 253878446}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 180}
 --- !u!64 &1274866628
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4488,6 +4490,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
+  planeCharacter: {fileID: 1428752084}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
@@ -4604,6 +4607,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
+  planeCharacter: {fileID: 952168698}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
@@ -4635,13 +4639,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1428752084}
-  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0.55, z: 0}
   m_LocalScale: {x: 0.09903201, y: 1, z: 0.099158496}
   m_Children: []
   m_Father: {fileID: 1317291867}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 180}
 --- !u!64 &1428752086
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4731,13 +4735,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1461907463}
-  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0.55, z: 0}
   m_LocalScale: {x: 0.09903201, y: 1, z: 0.099158496}
   m_Children: []
   m_Father: {fileID: 103727052}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 180}
 --- !u!64 &1461907465
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4827,13 +4831,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1462177323}
-  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0.55, z: 0}
   m_LocalScale: {x: 0.09903201, y: 1, z: 0.099158496}
   m_Children: []
   m_Father: {fileID: 1134837221}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 180}
 --- !u!64 &1462177325
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5008,6 +5012,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
+  planeCharacter: {fileID: 1574455184}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
@@ -5039,13 +5044,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1516949397}
-  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0.55, z: 0}
   m_LocalScale: {x: 0.099032, y: 1, z: 0.099158496}
   m_Children: []
   m_Father: {fileID: 1549508343}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 180}
 --- !u!64 &1516949399
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5220,6 +5225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
+  planeCharacter: {fileID: 1809378886}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
@@ -5336,6 +5342,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
+  planeCharacter: {fileID: 1516949397}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
@@ -5452,6 +5459,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
+  planeCharacter: {fileID: 14213290}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
@@ -5483,13 +5491,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1574455184}
-  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0.55, z: 0}
   m_LocalScale: {x: 0.09903201, y: 1, z: 0.099158496}
   m_Children: []
   m_Father: {fileID: 1504957203}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 180}
 --- !u!64 &1574455186
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5658,13 +5666,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1809378886}
-  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0.55, z: 0}
   m_LocalScale: {x: 0.09903201, y: 1, z: 0.099158496}
   m_Children: []
   m_Father: {fileID: 1531269472}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 180}
 --- !u!64 &1809378888
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5916,6 +5924,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
+  planeCharacter: {fileID: 2057343673}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
@@ -5947,13 +5956,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2057343673}
-  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0.55, z: 0}
   m_LocalScale: {x: 0.09903201, y: 1, z: 0.099158496}
   m_Children: []
   m_Father: {fileID: 1910319399}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 180}
 --- !u!64 &2057343675
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6128,6 +6137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
+  planeCharacter: {fileID: 526848975}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5

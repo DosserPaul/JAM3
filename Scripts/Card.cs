@@ -10,6 +10,8 @@ public class Card : MonoBehaviour
     [Header("Settings in Game")]
     [SerializeField]
     GameManager manager;
+    [SerializeField]
+    GameObject planeCharacter;
     public float overY = 10f;
     public float smoothSpeed = 5f;
     public float smoothRot = 25f;
@@ -31,6 +33,14 @@ public class Card : MonoBehaviour
         startOver = transform.position;
         startRot = transform.rotation;
         startTransform = transform;
+        if (identification != null)
+        {
+            planeCharacter.GetComponent<MeshRenderer>().material = identification.Image;
+        } else
+        {
+            Material mat = new Material(Shader.Find("Specular"));
+            planeCharacter.GetComponent<MeshRenderer>().material = mat;
+        }
     }
 
     private void Update()
