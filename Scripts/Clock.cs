@@ -11,15 +11,21 @@ public class Clock : MonoBehaviour {
     public int minutes = 0;
     public int miliSeconds = 0;
     public bool takingAway = false;
+    bool isStoped = false;
+
 
     void Start() {
         textDisplay.text = "" + format_time(minutes) + ":" + format_time(seconds) + ":" + format_time(miliSeconds);
     }
 
     void Update() {
-        if (takingAway == false) {
+        if (takingAway == false && isStoped == false) {
             StartCoroutine(TimerTake());
         }
+    }
+
+    void Stop() {
+        isStoped = true;
     }
 
     string format_time(int nb) {
@@ -49,42 +55,4 @@ public class Clock : MonoBehaviour {
         textDisplay.text = "" + format_time(minutes) + ":" + format_time(seconds) + ":" + format_time(miliSeconds);
         takingAway = false;
     }
-
-    // public Text textDisplay;
-    // public int secondLeft = 30;
-    // public bool takingAway = false;
-
-    // void Start() {
-    //     textDisplay.text = "00:" + secondLeft;
-    // }
-
-    // void Update() {
-    //     if (takingAway == false && secondLeft > 0) {
-    //         StartCoroutine(TimerTake());
-    //     }
-    // }
-
-    // IEnumerator TimerTake()
-    // {
-    //     takingAway = true;
-    //     yield return new WaitForSeconds(1);
-    //     secondLeft -= 1;
-    //     textDisplay.text = "00:" + secondLeft;
-    //     takingAway = false;
-    // }
-
-    // private Text textClock;void Awake (){
-    //     textClock = GetComponent<Text>();
-    // }
-  
-    // void Update () {
-    //     DateTime time = DateTime.MinValue;
-    //     string minute = LeadingZero(time.Minute);
-    //     string second = LeadingZero(time.Second);
-    //     textClock.text = minute + ":" + minute;
-    // }
-  
-    // string LeadingZero (int n) {
-    //     return n.ToString().PadLeft(2, '0');
-    // }
 }
