@@ -41,36 +41,45 @@ public class GameManager : MonoBehaviour
     IEnumerator returnCards()
     {
         isReturning = true;
-        yield return new WaitForSeconds(timeToReturn);
-        bool sameFamily = false;
+        bool sameFamily = true;
         FamilyId lastFamily = null;
         for (int i = 0; i < objects.Count; i++)
         {
             if (lastFamily == null)
             {
+                Debug.Log("last family is null");
                 CardId cid = objects[i].GetCardId();
                 if (cid != null)
                 {
                     lastFamily = cid.family;
                 }
-            } else
-            {
+            } else {
                 CardId cid = objects[i].GetCardId();
-                if (cid != null)
+                if (cid != null && cid.family != null)
                 {
                     if (cid.family.familyName != lastFamily.familyName)
                     {
+                        Debug.Log("last family (" + lastFamily.familyName + ") != cauu family (" + cid.family.familyName + ")");
                         sameFamily = false;
+                        break;
                     }
                 }
             }
-            objects[i].SetClicked(false);
         }
-        objects.Clear();
         if (sameFamily)
         {
             familyGot.Add(lastFamily);
         }
+        yield return new WaitForSeconds(timeToReturn);
+        for (int i = 0; i < objects.Count; i++)
+        {
+            if (sameFamily)
+            {
+                objects[i].DestroyCard();
+            }
+            objects[i].SetClicked(false);
+        }
+        objects.Clear();
         isReturning = false;
     }
 

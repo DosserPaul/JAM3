@@ -8,4 +8,5 @@ public class CardId : ScriptableObject
     public Sprite Image;
     public FamilyId family;
     public string Name;
+    public Color color;
 }

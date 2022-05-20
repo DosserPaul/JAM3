@@ -231,12 +231,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66e6608b55baa444e8d9a12d3d174ea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  identification: {fileID: 0}
+  identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
-  destroyY: 200
+  destroyY: 50
   PlaneImage: {fileID: 0}
 --- !u!1 &45384949
 GameObject:
@@ -346,12 +346,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66e6608b55baa444e8d9a12d3d174ea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  identification: {fileID: 0}
+  identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
-  destroyY: 200
+  destroyY: 50
   PlaneImage: {fileID: 0}
 --- !u!1 &103727051
 GameObject:
@@ -461,12 +461,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66e6608b55baa444e8d9a12d3d174ea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  identification: {fileID: 0}
+  identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
-  destroyY: 200
+  destroyY: 50
   PlaneImage: {fileID: 0}
 --- !u!1 &152362454
 GameObject:
@@ -730,12 +730,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66e6608b55baa444e8d9a12d3d174ea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  identification: {fileID: 0}
+  identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
-  destroyY: 200
+  destroyY: 50
   PlaneImage: {fileID: 0}
 --- !u!1 &297922180
 GameObject:
@@ -845,12 +845,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66e6608b55baa444e8d9a12d3d174ea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  identification: {fileID: 0}
+  identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
-  destroyY: 200
+  destroyY: 50
   PlaneImage: {fileID: 0}
 --- !u!1 &344822179
 GameObject:
@@ -1191,12 +1191,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66e6608b55baa444e8d9a12d3d174ea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  identification: {fileID: 0}
+  identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
-  destroyY: 200
+  destroyY: 50
   PlaneImage: {fileID: 0}
 --- !u!1 &564954290
 GameObject:
@@ -1306,12 +1306,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66e6608b55baa444e8d9a12d3d174ea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  identification: {fileID: 0}
+  identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
-  destroyY: 200
+  destroyY: 50
   PlaneImage: {fileID: 0}
 --- !u!1 &582884400
 GameObject:
@@ -1421,12 +1421,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66e6608b55baa444e8d9a12d3d174ea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  identification: {fileID: 0}
+  identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
-  destroyY: 200
+  destroyY: 50
   PlaneImage: {fileID: 0}
 --- !u!1 &606293423
 GameObject:
@@ -1536,12 +1536,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66e6608b55baa444e8d9a12d3d174ea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  identification: {fileID: 0}
+  identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
-  destroyY: 200
+  destroyY: 50
   PlaneImage: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
@@ -1820,12 +1820,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66e6608b55baa444e8d9a12d3d174ea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  identification: {fileID: 0}
+  identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
-  destroyY: 200
+  destroyY: 50
   PlaneImage: {fileID: 0}
 --- !u!1 &868350609
 GameObject:
@@ -1935,12 +1935,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66e6608b55baa444e8d9a12d3d174ea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  identification: {fileID: 0}
+  identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
-  destroyY: 200
+  destroyY: 50
   PlaneImage: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
@@ -2133,12 +2133,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66e6608b55baa444e8d9a12d3d174ea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  identification: {fileID: 0}
+  identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
-  destroyY: 200
+  destroyY: 50
   PlaneImage: {fileID: 0}
 --- !u!1 &1031497456
 GameObject:
@@ -2248,12 +2248,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66e6608b55baa444e8d9a12d3d174ea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  identification: {fileID: 0}
+  identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
-  destroyY: 200
+  destroyY: 50
   PlaneImage: {fileID: 0}
 --- !u!1 &1048838675
 GameObject:
@@ -2429,12 +2429,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66e6608b55baa444e8d9a12d3d174ea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  identification: {fileID: 0}
+  identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
-  destroyY: 200
+  destroyY: 50
   PlaneImage: {fileID: 0}
 --- !u!1 &1134837220
 GameObject:
@@ -2544,12 +2544,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66e6608b55baa444e8d9a12d3d174ea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  identification: {fileID: 0}
+  identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
-  destroyY: 200
+  destroyY: 50
   PlaneImage: {fileID: 0}
 --- !u!1 &1208617775
 GameObject:
@@ -2708,12 +2708,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66e6608b55baa444e8d9a12d3d174ea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  identification: {fileID: 0}
+  identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
-  destroyY: 200
+  destroyY: 50
   PlaneImage: {fileID: 0}
 --- !u!1 &1317291866
 GameObject:
@@ -2823,12 +2823,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66e6608b55baa444e8d9a12d3d174ea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  identification: {fileID: 0}
+  identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
-  destroyY: 200
+  destroyY: 50
   PlaneImage: {fileID: 0}
 --- !u!1 &1352577133
 GameObject:
@@ -2938,12 +2938,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66e6608b55baa444e8d9a12d3d174ea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  identification: {fileID: 0}
+  identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
-  destroyY: 200
+  destroyY: 50
   PlaneImage: {fileID: 0}
 --- !u!1 &1504957202
 GameObject:
@@ -3053,12 +3053,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66e6608b55baa444e8d9a12d3d174ea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  identification: {fileID: 0}
+  identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
-  destroyY: 200
+  destroyY: 50
   PlaneImage: {fileID: 0}
 --- !u!1 &1531269471
 GameObject:
@@ -3168,12 +3168,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66e6608b55baa444e8d9a12d3d174ea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  identification: {fileID: 0}
+  identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
-  destroyY: 200
+  destroyY: 50
   PlaneImage: {fileID: 0}
 --- !u!1 &1549508339
 GameObject:
@@ -3283,12 +3283,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66e6608b55baa444e8d9a12d3d174ea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  identification: {fileID: 0}
+  identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
-  destroyY: 200
+  destroyY: 50
   PlaneImage: {fileID: 0}
 --- !u!1 &1557722080
 GameObject:
@@ -3398,12 +3398,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66e6608b55baa444e8d9a12d3d174ea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  identification: {fileID: 0}
+  identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
-  destroyY: 200
+  destroyY: 50
   PlaneImage: {fileID: 0}
 --- !u!1 &1748788147
 GameObject:
@@ -3669,12 +3669,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66e6608b55baa444e8d9a12d3d174ea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  identification: {fileID: 0}
+  identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
-  destroyY: 200
+  destroyY: 50
   PlaneImage: {fileID: 0}
 --- !u!1 &2142827361
 GameObject:
@@ -3784,10 +3784,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66e6608b55baa444e8d9a12d3d174ea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  identification: {fileID: 0}
+  identification: {fileID: 11400000, guid: 23ae01dc875813643977461ca7886dd2, type: 2}
   manager: {fileID: 1208617777}
   overY: 1
   smoothSpeed: 5
   smoothRot: 5
-  destroyY: 200
+  destroyY: 50
   PlaneImage: {fileID: 0}
