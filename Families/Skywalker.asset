@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bef3ca5f1dd63984bb3dd39d2a97c288, type: 3}
+  m_Name: Skywalker
+  m_EditorClassIdentifier: 
+  familyName: Skywalker
+  members:
+  - {fileID: 11400000, guid: 8bc191df04eb7ab42ac65760c2e18782, type: 2}
+  - {fileID: 11400000, guid: a2269e52fa7d07a43a43b56f09395e31, type: 2}
+  - {fileID: 11400000, guid: 46959aa3c06e43049807e3a3d6a5de47, type: 2}
+  - {fileID: 11400000, guid: 2e3647f0ebd0db44baf2919cdaca5744, type: 2}
