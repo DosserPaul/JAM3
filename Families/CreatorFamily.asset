@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bef3ca5f1dd63984bb3dd39d2a97c288, type: 3}
+  m_Name: CreatorFamily
+  m_EditorClassIdentifier: 
+  familyName: Greator FAmily
+  members:
+  - {fileID: 11400000, guid: e50ff29dc1ffc2a659758f5e86ce02dd, type: 2}
+  - {fileID: 11400000, guid: 8ea8bbb97120209e8981339a3637a72a, type: 2}
+  - {fileID: 11400000, guid: 45343970c01f9ee6da6ef60a70578ae3, type: 2}
+  - {fileID: 11400000, guid: 88ebad3affeb48c439d5fc3060ad67a1, type: 2}
+  - {fileID: 11400000, guid: 6e05f398ded46bc46b43c075d49e9537, type: 2}
